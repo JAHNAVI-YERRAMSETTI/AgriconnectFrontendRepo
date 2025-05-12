@@ -1305,8 +1305,7 @@ export default function Home() {
         <div style={{background: '#1a3c34', padding: '18px 0 10px 0', textAlign: 'center', borderBottomLeftRadius: '8px', borderBottomRightRadius: '8px'}}>
   <nav style={{marginBottom: '8px'}}>
     <a href="/" style={{color: '#B4D335', margin: '0 18px', fontWeight: 600, textDecoration: 'none'}}>Home</a>
-    <span style={{color: '#fff', opacity: 0.3}}>|</span>
-    <a href="/about" style={{color: '#fff', margin: '0 18px', textDecoration: 'none'}}>About</a>
+
     <span style={{color: '#fff', opacity: 0.3}}>|</span>
     <a href="#services" style={{color: '#fff', margin: '0 18px', textDecoration: 'none'}}>Services</a>
     <span style={{color: '#fff', opacity: 0.3}}>|</span>
