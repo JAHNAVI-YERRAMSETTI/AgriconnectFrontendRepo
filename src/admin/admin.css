@@ -1,0 +1,72 @@
+/* Layout Wrapper */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 220px;
+  background: linear-gradient(135deg, #1a3c34 0%, #2a5a4e 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.admin-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #B4D335;
+}
+
+.admin-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav-links li {
+  margin: 10px 0;
+}
+
+.admin-nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.admin-nav-links a:hover {
+  background-color: rgba(180, 211, 53, 0.2);
+  color: #B4D335;
+}
+
+.admin-nav-links a.active {
+  background-color: rgba(180, 211, 53, 0.2);
+  color: #B4D335;
+}
+
+/* Main Content Area */
+.admin-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: flex-start;   /* Align to top of the page */
+  padding: 40px 20px;
+}
+
+/* Inner Container for Actual Page Content */
+.admin-content > * {
+  width: 100%;
+  max-width: 900px; /* Optional: limits how wide the content can be */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(26, 60, 52, 0.1);
+}

@@ -1,0 +1,489 @@
+/* Quick Actions Section */
+.quick-actions {
+  margin: 48px 0 32px 0;
+  text-align: center;
+}
+.quick-actions h2 {
+  font-size: 2.2rem;
+  color: #1a3c34;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #B4D335;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.action-button {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,60,52,0.10);
+  padding: 36px 32px 28px 32px;
+  min-width: 280px;
+  max-width: 340px;
+  flex: 1 1 280px;
+  text-align: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  text-decoration: none;
+  color: #1a3c34;
+  cursor: pointer;
+  border: none;
+}
+.action-button:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(180,211,53,0.18);
+}
+.action-icon {
+  background: #1a3c34;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+}
+.action-icon i {
+  color: #B4D335;
+  font-size: 2.5rem;
+}
+.action-button span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.action-button p {
+  color: #444;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Cards/Grids */
+.trends-grid, .products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.trend-card, .product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(26,60,52,0.10);
+  padding: 24px 20px 18px 20px;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  transition: transform 0.16s, box-shadow 0.16s;
+  position: relative;
+}
+.trend-card:hover, .product-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(180,211,53,0.13);
+  z-index: 2;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 900px) {
+  .action-buttons, .trends-grid, .products-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .action-button, .trend-card, .product-card {
+    max-width: 95vw;
+    min-width: 220px;
+  }
+}
+
+/* General Section Spacing */
+.market-trends, .top-products, .benefits-section, .weather-advisory {
+  margin: 48px 0 32px 0;
+  padding: 0 10px;
+}
+
+/* Add Product Form */
+.add-product-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(26,60,52,0.10);
+  max-width: 420px;
+  margin: 32px auto 0 auto;
+  padding: 36px 32px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.add-product-form input,
+.add-product-form textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dbe6e4;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: border 0.2s;
+}
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+  border: 1.5px solid #B4D335;
+  outline: none;
+}
+.add-product-form button {
+  background: #B4D335;
+  color: #1a3c34;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.add-product-form button:hover {
+  background: #1a3c34;
+  color: #fff;
+}
+
+/* Table Styles (View/Manage Products) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(26,60,52,0.10);
+  margin: 32px 0;
+  overflow: hidden;
+}
+thead {
+  background: #B4D335;
+  color: #1a3c34;
+}
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 1rem;
+}
+th {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+tr:nth-child(even) {
+  background: #f6f8f7;
+}
+tr:hover {
+  background: #eaf3e2;
+}
+
+/* Edit Form in Manage Products */
+.edit-form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(26,60,52,0.10);
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 32px 28px 24px 28px;
+}
+.edit-form h4 {
+  color: #1a3c34;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.edit-form label {
+  font-weight: 600;
+  color: #1a3c34;
+  margin-bottom: 4px;
+  display: block;
+}
+.edit-form input {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dbe6e4;
+  font-size: 1rem;
+}
+.edit-form input:focus {
+  border: 1.5px solid #B4D335;
+  outline: none;
+}
+
+/* Error & Success Messages */
+.success-message {
+  color: #1a3c34;
+  background: #eaf3e2;
+  border-left: 5px solid #B4D335;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 600;
+}
+.error-message {
+  color: #fff;
+  background: #d9534f;
+  border-left: 5px solid #a94442;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 12px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive for Forms & Tables */
+@media (max-width: 600px) {
+  .add-product-form, .edit-form {
+    padding: 18px 6vw;
+    max-width: 98vw;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  th, td {
+    padding: 10px 6vw;
+    font-size: 0.98rem;
+  }
+}
+
+.add-product-card {
+  background: #f6f8f7;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+.add-product-card > div {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,60,52,0.10);
+  padding: 36px 32px 28px 32px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+/* Container centering the card */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f4f8;
+  padding: 20px;
+}
+
+/* Card for login and profile */
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #1a3c34;
+}
+
+/* Headings */
+.profile-card h2 {
+  margin-bottom: 20px;
+  color: #1a3c34;
+}
+
+/* Input styling */
+.profile-card input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.profile-card input:focus {
+  border-color: #1a3c34;
+  outline: none;
+}
+
+/* Label styling */
+.profile-card label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1a3c34;
+}
+
+/* Button styling */
+.profile-card button {
+  background: #1a3c34;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile-card button:hover {
+  background: #B4D335;
+  color: #1a3c34;
+}
+
+/* Message paragraphs */
+.profile-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.farmer-login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a3c34 0%, #2a5a4e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.farmer-login-pattern {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23B4D335' fill-opacity='0.1'%3E%3Cpath d='M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm0 48c-9.9 0-18-8.1-18-18s8.1-18 18-18 18 8.1 18 18-8.1 18-18 18z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.farmer-login-header {
+  z-index: 1;
+  text-align: center;
+  color: #B4D335;
+  margin-bottom: 20px;
+}
+
+.farmer-login-icon {
+  font-size: 2.8rem;
+  background: #B4D335;
+  color: #1a3c34;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(180, 211, 53, 0.3);
+  margin: 0 auto 10px;
+  display: inline-block;
+}
+
+.farmer-form-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(180, 211, 53, 0.2);
+}
+
+.farmer-form-card h2 {
+  color: #1a3c34;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.farmer-form-card label {
+  font-weight: bold;
+  color: #1a3c34;
+  margin-top: 10px;
+  display: block;
+  text-align: left;
+}
+
+.farmer-form-card input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.farmer-form-card button {
+  background: #B4D335;
+  color: #1a3c34;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.farmer-form-card button:hover {
+  background: #1a3c34;
+  color: #fff;
+}
+
+.farmer-message {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.farmer-form-card button {
+  background: linear-gradient(45deg, #b4d335, #c6e850); /* Light green gradient */
+  color: #1a3c34;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.farmer-form-card button:hover {
+  background: linear-gradient(45deg, #a1c72e, #c6e850);
+  color: #fff;
+}
+/* Weather Section */
+.weather-section {
+  background: #f6f8f7;
+  border: 2px solid #B4D335;
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(26,60,52,0.08);
+}
+
+.weather-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a3c34;
+  margin-bottom: 12px;
+}
+
+.weather-section p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+.weather-section .weather-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #B4D335;
+}
