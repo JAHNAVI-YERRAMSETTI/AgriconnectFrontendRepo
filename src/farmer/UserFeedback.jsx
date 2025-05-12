@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./farmer.css"; // Adjust styling as needed
-
+import config from '../config'
 export default function UserFeedback() {
   const [feedbackMessages, setFeedbackMessages] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:2047/api/contact/messages/farmer")
+fetch(`${config.url}/api/contact/messages/farmer`)
       .then((res) => res.json())
       .then((data) => setFeedbackMessages(data))
       .catch((err) => console.error("Error fetching feedbacks:", err));

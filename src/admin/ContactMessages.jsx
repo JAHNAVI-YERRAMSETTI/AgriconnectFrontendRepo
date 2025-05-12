@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-
+import config from '../config'
 export default function AdminContactMessages() {
   const [messages, setMessages] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:2047/api/contact/messages/admin")
+  fetch(`${config.url}/api/contact/messages/admin`)
       .then((res) => res.json())
       .then((data) => setMessages(data))
       .catch(() => alert("Failed to load messages."));

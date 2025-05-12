@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../contextapi/AuthContext";
-
+import config from '../config'
 const AdminProfile = () => {
   const { admin } = useAuth(); // get logged-in admin from AuthContext
   const [adminData, setAdminData] = useState({
@@ -18,7 +18,8 @@ const AdminProfile = () => {
   useEffect(() => {
     if (admin?.username) {
       setLoading(true);
-      axios.get(`http://localhost:2047/api/admin/${admin.username}`)
+     
+axios.get(`${config.url}/api/admin/${admin.username}`)
         .then(res => {
           setAdminData(res.data);
           setError(null);
@@ -70,7 +71,7 @@ const AdminProfile = () => {
       delete updatedData.password;
     }
 
-    axios.put("http://localhost:2047/api/admin/updateprofile", updatedData, {
+    axios.put(`${config.url}/api/admin/updateprofile`, updatedData, {
       headers: {
         'Content-Type': 'application/json'
       }

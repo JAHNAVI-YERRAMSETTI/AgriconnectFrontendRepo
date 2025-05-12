@@ -1,7 +1,7 @@
 import "./style.css";
 import pic20 from "../assets/pic20.jpg";
 import { useState } from "react";
-
+import config from '../config'
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
@@ -30,7 +30,7 @@ export default function Contact() {
   
     const payload = { ...form, recipientRole };
   
-    fetch("http://localhost:2047/api/contact/submit", {
+   fetch(`${config.url}/api/contact/submit`,{
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
