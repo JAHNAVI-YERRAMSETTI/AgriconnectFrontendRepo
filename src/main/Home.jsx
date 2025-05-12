@@ -1302,10 +1302,24 @@ export default function Home() {
           <a href="https://github.com/JAHNAVI-YERRAMSETTI" target="_blank" rel="noopener noreferrer" style={{color: '#B4D335', fontSize: '1.7rem', background: '#22332c', borderRadius: '6px', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><i className="fab fa-github"></i></a>
         </div>
         {/* Bottom Bar with Navigation */}
-        <div style={{background: '#1a3c34', padding: '18px 0 10px 0', textAlign: 'center', borderBottomLeftRadius: '8px', borderBottomRightRadius: '8px'}}>
-  <nav style={{marginBottom: '8px'}}>
-    <a href="/" style={{color: '#B4D335', margin: '0 18px', fontWeight: 600, textDecoration: 'none'}}>Home</a>
-
+       
+  {/* Bottom Bar with Navigation */}
+  <div style={{
+    background: '#1a3c34',
+    padding: '18px 0 10px 0',
+    textAlign: 'center',
+    borderBottomLeftRadius: '8px',
+    borderBottomRightRadius: '8px'
+  }}>
+    <nav style={{ marginBottom: '8px' }}>
+      {/* Home scroll to top without route */}
+      <span
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        style={{ color: '#B4D335', margin: '0 18px', fontWeight: 600, cursor: 'pointer' }}
+      >
+        Home
+      </span>
+      
     <span style={{color: '#fff', opacity: 0.3}}>|</span>
     <a href="#services" style={{color: '#fff', margin: '0 18px', textDecoration: 'none'}}>Services</a>
     <span style={{color: '#fff', opacity: 0.3}}>|</span>
