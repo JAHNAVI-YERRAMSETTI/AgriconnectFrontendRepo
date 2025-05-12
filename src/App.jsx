@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import MainNavBar from "./main/MainNavBar";
 import FarmerNavBar from "./farmer/FarmerNavBar";
 import BuyerNavBar from "./buyer/BuyerNavBar";
-import AdminNavBar from "./admin/AdminNavbar";
+import AdminNavBar from "./admin/AdminNavBar";
 import { AuthProvider, useAuth } from "./contextapi/AuthContext";
 import { CartProvider } from "./buyer/cartContext";
 
