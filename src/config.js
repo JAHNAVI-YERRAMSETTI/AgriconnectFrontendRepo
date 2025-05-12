@@ -1,5 +1,5 @@
 const config = {
-    url: "http://localhost:2047"
+    url: "https://springbootagriconnectproject-production.up.railway.app/"
 };
 
 export default config;
